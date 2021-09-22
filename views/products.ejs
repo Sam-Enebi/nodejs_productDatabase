@@ -1,0 +1,29 @@
+<body>
+	<h1 style="text-align: center;"">All Products</h1>
+        <table border="1px"  cellpadding="15" style="margin: 5rem auto 5rem auto">
+            <thead>
+		<tr>
+			<th>Name</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Quantity</th>
+		</tr>
+    </thead>
+    <tbody>
+        <% if (products.length > 0) { %> <% products.forEach(product => { %>
+			<tr>
+				<td><%= product.name %></td>
+		        <td><%= product.price %></td>
+			    <td><%= product.description %></td>
+			    <td><%= product.quantity %></td>
+			</tr>
+            <% }) %> <% } %>
+            </tbody>
+		</table>
+    	<a
+		href="http://localhost:3000/"
+		style="margin: 5rem 30rem 0 45rem"
+		><button>Add Product</button> </a
+	>
+</body>
+

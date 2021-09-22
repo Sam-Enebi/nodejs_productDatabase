@@ -1,0 +1,40 @@
+<body>
+	<h1 style="text-align: center;"">Add New Product</h1>
+	<form action="http://localhost:3000/product/addProduct" method="POST">
+		<table cellpadding="15" style="margin: 5rem auto 0 auto">
+			<tr>
+				<td>
+					<input type="text" name="name" placeholder="Name" style="height: 1.5rem;" />
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<input type="text" name="price" placeholder="Price" style="height: 1.5rem;" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" name="description" placeholder="Description" style="height: 1.5rem;"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" name="quantity" placeholder="Quantity" style="height: 1.5rem;" />
+				</td>
+			</tr>
+
+			<tr>
+				<td width="100px"></td>
+				<td style="color: blue">
+					<input type="submit" value="Add Product" />
+				</td>
+			</tr>
+		</table>
+	</form>
+	<a
+		href="http://localhost:3000/product/products"
+		style="margin: 5rem 20rem 0 20rem"
+		><button>All Products</button></a
+	>
+</body>
